@@ -9,7 +9,7 @@
 
 #include <ESP8266WiFi.h>
 
-const char* ssid = "your-ssid";
+const char* ssid = "OpenWrt_NAT_500GP.101";
 const char* password = "your-password";
 
 // Create an instance of the server
