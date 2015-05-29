@@ -10,7 +10,7 @@
 #include <ESP8266WiFi.h>
 
 const char* ssid = "your-ssid";
-const char* password = "your-password";
+const char* password = "activegateway";
 
 // Create an instance of the server
 // specify the port to listen on as an argument
@@ -82,14 +82,9 @@ void loop() {
   
   client.flush();
 
-  // Prepare the response
-  String s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>\r\nGPIO is now ";
-  s += (val)?"high":"low";
-  s += "</html>\n";
 
-  // Send the response to the client
-  client.print(s);
   // delay(1);
+
   Serial.println("Client disonnected");
 
   // The client will actually be disconnected 
