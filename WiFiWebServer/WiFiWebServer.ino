@@ -89,7 +89,7 @@ void loop() {
 
   // Send the response to the client
   client.print(s);
-  delay(1);
+  // delay(1);
   Serial.println("Client disonnected");
 
   // The client will actually be disconnected 
